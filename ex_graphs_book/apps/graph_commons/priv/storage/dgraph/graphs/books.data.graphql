@@ -1,0 +1,28 @@
+# Book 1
+_:adopting-elixir <Book.date> "2018-03-14" .
+_:adopting-elixir <Book.format> "Paper" .
+_:adopting-elixir <Book.isbn> "978-1-68050-252-7" .
+_:adopting-elixir <Book.title> "Adopting Elixir" .
+_:adopting-elixir <Book.url> "https://pragprog.com/titles/tvmelixir/adopting-elixir/" .
+_:adopting-elixir <dgraph.type> "Book" .
+
+_:bgmarx <Author.name> "Ben Marx" .
+_:bgmarx <Author.url> "https://twitter.com/bgmarx" .
+_:bgmarx <dgraph.type> "Author" .
+
+_:josevalim <Author.name> "José Valim" .
+_:josevalim <Author.url> "https://twitter.com/josevalim" .
+_:josevalim <dgraph.type> "Author" .
+
+_:redrapids <Author.name> "Bruce Tate" .
+_:redrapids <Author.url> "https://twitter.com/redrapids" .
+_:redrapids <dgraph.type> "Author" .
+
+_:pragprog <Publisher.name> "The Pragmatic Bookshelf" .
+_:pragprog <Publisher.url> "https://pragprog.com/" .
+_:pragprog <dgraph.type> "Publisher" .
+
+_:adopting-elixir <Book.AUTHORED_BY> _:bgmarx (role="first author") .
+_:adopting-elixir <Book.AUTHORED_BY> _:josevalim (role="second author") .
+_:adopting-elixir <Book.AUTHORED_BY> _:redrapids (role="third author") .
+_:adopting-elixir <Book.PUBLISHED_BY> _:pragprog .

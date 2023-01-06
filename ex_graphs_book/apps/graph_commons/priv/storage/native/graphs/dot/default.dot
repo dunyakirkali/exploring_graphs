@@ -1,0 +1,5 @@
+strict digraph {
+    97[label="a"]
+    98[label="b"]
+    97 -> 98 [label="EX"; weight=1]
+}

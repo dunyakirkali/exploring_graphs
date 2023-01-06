@@ -1,0 +1,14 @@
+{
+  book(func: type(Book)) {
+    uid
+    expand(_all_)
+    AUTHORED_BY {
+      uid
+      expand(_all_)
+    }
+    PUBLISHED_BY {
+      uid
+      expand(_all_)
+    }
+  }
+}

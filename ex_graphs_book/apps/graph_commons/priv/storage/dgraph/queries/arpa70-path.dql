@@ -1,0 +1,11 @@
+{
+  A as var(func: eq(name, "HARVARD"))
+  B as var(func: eq(name, "UCLA"))
+
+  path as shortest(from: uid(A), to: uid(B), numpaths: 1) {
+    N_LINK
+  }
+  path(func: uid(path)) {
+    name
+  }
+}

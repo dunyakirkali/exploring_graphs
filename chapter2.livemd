@@ -1,0 +1,19 @@
+# Exploring Graphs with Elixir
+
+## Coding a Hello World Graph
+
+```elixir
+import :digraph
+
+g = new()
+
+v1 = add_vertex(g, "Hello")
+
+v2 = add_vertex(g, "World")
+
+get_path(g, v1, v2)
+
+add_edge(g, v1, v2)
+
+get_path(g, v1, v2)
+```

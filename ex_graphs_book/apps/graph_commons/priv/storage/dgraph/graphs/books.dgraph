@@ -1,0 +1,100 @@
+# Book 1
+_:adopting-elixir <date> "2018-03-14" .
+_:adopting-elixir <format> "Paper" .
+_:adopting-elixir <isbn> "978-1-68050-252-7" .
+_:adopting-elixir <title> "Adopting Elixir" .
+_:adopting-elixir <url> "https://pragprog.com/titles/tvmelixir/adopting-elixir/" .
+_:adopting-elixir <dgraph.type> "Book" .
+
+_:bgmarx <name> "Ben Marx" .
+_:bgmarx <url> "https://twitter.com/bgmarx" .
+_:bgmarx <dgraph.type> "Author" .
+
+_:josevalim <name> "José Valim" .
+_:josevalim <url> "https://twitter.com/josevalim" .
+_:josevalim <dgraph.type> "Author" .
+
+_:redrapids <name> "Bruce Tate" .
+_:redrapids <url> "https://twitter.com/redrapids" .
+_:redrapids <dgraph.type> "Author" .
+
+_:pragprog <name> "The Pragmatic Bookshelf" .
+_:pragprog <url> "https://pragprog.com/" .
+_:pragprog <dgraph.type> "Publisher" .
+
+_:adopting-elixir <AUTHORED_BY> _:bgmarx (role="first author") .
+_:adopting-elixir <AUTHORED_BY> _:josevalim (role="second author") .
+_:adopting-elixir <AUTHORED_BY> _:redrapids (role="third author") .
+_:adopting-elixir <PUBLISHED_BY> _:pragprog .
+
+# Book 2
+_:craft-graphql <date> "2018-03-27" .
+_:craft-graphql <format> "Paper" .
+_:craft-graphql <isbn> "978-1-68050-255-8" .
+_:craft-graphql <title> "Craft GraphQL APIs in Elixir with Absinthe" .
+_:craft-graphql <url> "https://pragprog.com/titles/wwgraphql/craft-graphql-apis-in-elixir-with-absinthe/" .
+_:craft-graphql <dgraph.type> "Book" .
+
+_:wbruce <name> "Bruce Williams" .
+_:wbruce <url> "https://twitter.com/wbruce" .
+_:wbruce <dgraph.type> "Author" .
+
+_:benwilson512 <name> "Ben Wilson" .
+_:benwilson512 <url> "https://twitter.com/benwilson512" .
+_:benwilson512 <dgraph.type> "Author" .
+
+_:pragprog <name> "The Pragmatic Bookshelf" .
+_:pragprog <url> "https://pragprog.com/" .
+_:pragprog <dgraph.type> "Publisher" .
+
+_:craft-graphql <AUTHORED_BY> _:wbruce (role="first author") .
+_:craft-graphql <AUTHORED_BY> _:benwilson512 (role="second author") .
+_:craft-graphql <PUBLISHED_BY> _:pragprog .
+
+# Book 3
+_:designing-elixir <date> "2019-11-20" .
+_:designing-elixir <format> "Paper" .
+_:designing-elixir <isbn> "978-1-68050-661-7" .
+_:designing-elixir <title> "Designing Elixir Systems with OTP" .
+_:designing-elixir <url> "https://pragprog.com/titles/jgotp/designing-elixir-systems-with-otp/" .
+_:designing-elixir <dgraph.type> "Book" .
+
+_:JEG2 <name> "James Edward Gray II" .
+_:JEG2 <url> "https://twitter.com/JEG2" .
+_:JEG2 <dgraph.type> "Author" .
+
+_:redrapids <name> "Bruce Tate" .
+_:redrapids <url> "https://twitter.com/redrapids" .
+_:redrapids <dgraph.type> "Author" .
+
+_:pragprog <name> "The Pragmatic Bookshelf" .
+_:pragprog <url> "https://pragprog.com/" .
+_:pragprog <dgraph.type> "Publisher" .
+
+_:designing-elixir <AUTHORED_BY> _:JEG2 (role="first author") .
+_:designing-elixir <AUTHORED_BY> _:redrapids (role="second author") .
+_:designing-elixir <PUBLISHED_BY> _:pragprog .
+
+# Book 4
+_:graph-algorithms <date> "2019-03-16" .
+_:graph-algorithms <format> "Paper" .
+_:graph-algorithms <isbn> "978-1-492-04767-4" .
+_:graph-algorithms <title> "Graph Algorithms" .
+_:graph-algorithms <url> "https://www.oreilly.com/library/view/graph-algorithms/9781492047674/" .
+_:graph-algorithms <dgraph.type> "Book" .
+
+_:amyhodler <name> "Amy E. Hodler" .
+_:amyhodler <url> "https://twitter.com/amyhodler" .
+_:amyhodler <dgraph.type> "Author" .
+
+_:markhneedham <name> "Mark Needham" .
+_:markhneedham <url> "https://twitter.com/markhneedham" .
+_:markhneedham <dgraph.type> "Author" .
+
+_:oreilly <name> "O'Reilly Media" .
+_:oreilly <iri> "https://www.oreilly.com/" .
+_:oreilly <dgraph.type> "Publisher" .
+
+_:graph-algorithms <AUTHORED_BY> _:amyhodler (role="first author") .
+_:graph-algorithms <AUTHORED_BY> _:markhneedham (role="second author") .
+_:graph-algorithms <PUBLISHED_BY> _:oreilly .

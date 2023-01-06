@@ -1,0 +1,100 @@
+# Book 1
+_:v11 <date> "2018-03-14" .
+_:v11 <format> "Paper" .
+_:v11 <isbn> "978-1-68050-252-7" .
+_:v11 <title> "Adopting Elixir" .
+_:v11 <url> "https://pragprog.com/titles/tvmelixir/adopting-elixir/" .
+_:v11 <dgraph.type> "Book" .
+
+_:v12 <name> "Ben Marx" .
+_:v12 <url> "https://twitter.com/bgmarx" .
+_:v12 <dgraph.type> "Author" .
+
+_:v13 <name> "José Valim" .
+_:v13 <url> "https://twitter.com/josevalim" .
+_:v13 <dgraph.type> "Author" .
+
+_:v14 <name> "Bruce Tate" .
+_:v14 <url> "https://twitter.com/redrapids" .
+_:v14 <dgraph.type> "Author" .
+
+_:v15 <name> "The Pragmatic Bookshelf" .
+_:v15 <url> "https://pragprog.com/" .
+_:v15 <dgraph.type> "Publisher" .
+
+_:v11 <AUTHORED_BY> _:v12 (role="first author") .
+_:v11 <AUTHORED_BY> _:v13 (role="second author") .
+_:v11 <AUTHORED_BY> _:v14 (role="third author") .
+_:v11 <PUBLISHED_BY> _:v15 .
+
+# Book 2
+_:v21 <date> "2018-03-27" .
+_:v21 <format> "Paper" .
+_:v21 <isbn> "978-1-68050-255-8" .
+_:v21 <title> "Craft GraphQL APIs in Elixir with Absinthe" .
+_:v21 <url> "https://pragprog.com/titles/wwgraphql/craft-graphql-apis-in-elixir-with-absinthe/" .
+_:v21 <dgraph.type> "Book" .
+
+_:v22 <name> "Bruce Williams" .
+_:v22 <url> "https://twitter.com/wbruce" .
+_:v22 <dgraph.type> "Author" .
+
+_:v23 <name> "Ben Wilson" .
+_:v23 <url> "https://twitter.com/benwilson512" .
+_:v23 <dgraph.type> "Author" .
+
+_:v24 <name> "The Pragmatic Bookshelf" .
+_:v24 <url> "https://pragprog.com/" .
+_:v24 <dgraph.type> "Publisher" .
+
+_:v21 <AUTHORED_BY> _:v22 (role="first author") .
+_:v21 <AUTHORED_BY> _:v23 (role="second author") .
+_:v21 <PUBLISHED_BY> _:v24 .
+
+# Book 3
+_:v31 <date> "2019-11-20" .
+_:v31 <format> "Paper" .
+_:v31 <isbn> "978-1-68050-661-7" .
+_:v31 <title> "Designing Elixir Systems with OTP" .
+_:v31 <url> "https://pragprog.com/titles/jgotp/designing-elixir-systems-with-otp/" .
+_:v31 <dgraph.type> "Book" .
+
+_:v32 <name> "James Edward Gray II" .
+_:v32 <url> "https://twitter.com/JEG2" .
+_:v32 <dgraph.type> "Author" .
+
+_:v33 <name> "Bruce Tate" .
+_:v33 <url> "https://twitter.com/redrapids" .
+_:v33 <dgraph.type> "Author" .
+
+_:v34 <name> "The Pragmatic Bookshelf" .
+_:v34 <url> "https://pragprog.com/" .
+_:v34 <dgraph.type> "Publisher" .
+
+_:v31 <AUTHORED_BY> _:v32 (role="first author") .
+_:v31 <AUTHORED_BY> _:v33 (role="second author") .
+_:v31 <PUBLISHED_BY> _:v34 .
+
+# Book 4
+_:v41 <date> "2019-03-16" .
+_:v41 <format> "Paper" .
+_:v41 <isbn> "978-1-492-04767-4" .
+_:v41 <title> "Graph Algorithms" .
+_:v41 <url> "https://www.oreilly.com/library/view/graph-algorithms/9781492047674/" .
+_:v41 <dgraph.type> "Book" .
+
+_:v42 <name> "Amy E. Hodler" .
+_:v42 <url> "https://twitter.com/amyhodler" .
+_:v42 <dgraph.type> "Author" .
+
+_:v43 <name> "Mark Needham" .
+_:v43 <url> "https://twitter.com/markhneedham" .
+_:v43 <dgraph.type> "Author" .
+
+_:v44 <name> "O'Reilly Media" .
+_:v44 <url> "https://www.oreilly.com/" .
+_:v44 <dgraph.type> "Publisher" .
+
+_:v41 <AUTHORED_BY> _:v42 (role="first author") .
+_:v41 <AUTHORED_BY> _:v43 (role="second author") .
+_:v41 <PUBLISHED_BY> _:v44 .

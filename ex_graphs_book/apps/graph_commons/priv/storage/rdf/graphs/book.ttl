@@ -1,0 +1,31 @@
+@prefix schema: <https://schema.org/> .
+
+<https://pragprog.com/>
+    a schema:Organization ;
+    schema:identifier "pragmatic" ;
+    schema:name "The Pragmatic Bookshelf" .
+
+<https://pragprog.com/titles/tvmelixir/adopting-elixir/>
+    a schema:Book ;
+    schema:author <https://twitter.com/bgmarx>, <https://twitter.com/josevalim>, <https://twitter.com/redrapids> ;
+    schema:bookFormat "Paperback" ;
+    schema:datePublished "2018-03-14" ;
+    schema:identifier "adopting_elixir" ;
+    schema:isbn "978-1-68050-252-7" ;
+    schema:name "Adopting Elixir" ;
+    schema:publisher <https://pragprog.com/> .
+
+<https://twitter.com/bgmarx>
+    a schema:Person ;
+    schema:identifier "ben_marx" ;
+    schema:name "Ben Marx" .
+
+<https://twitter.com/josevalim>
+    a schema:Person ;
+    schema:identifier "jose_valim" ;
+    schema:name "José Valim" .
+
+<https://twitter.com/redrapids>
+    a schema:Person ;
+    schema:identifier "bruce_tate" ;
+    schema:name "Bruce Tate" .

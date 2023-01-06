@@ -1,0 +1,9 @@
+{
+  arpa70(func: type(Node)) {
+    uid
+    name
+    type
+    <~H_LINK> { uid expand(_all_)}
+    N_LINK { uid expand(_all_)}
+  }
+}

@@ -1,0 +1,17 @@
+name: string @index(term) .
+type: string @index(term) .
+
+H_LINK: [uid] @reverse .
+N_LINK: [uid] .
+
+type Host {
+  name
+  type
+  <~H_LINK>
+}
+
+type Node {
+  name
+  type
+  N_LINK
+}

@@ -1,0 +1,216 @@
+####
+# ARPANET - Dec 1970 [1]
+#
+# [1] http://mercury.lcs.mit.edu/~jnc/tech/arpalog.html
+####
+
+
+##
+## SEGMENT 1 - Outer Circuit (Clockwise from UCLA to RAND)
+
+
+# Site: UCLA
+
+_:ucla <dgraph.type> "Node" .
+_:ucla <type> "IMP" .
+_:ucla <name> "UCLA" .
+_:ucla_h1 <dgraph.type> "Host" .
+_:ucla_h1 <name> "360/91" .
+_:ucla_h2 <dgraph.type> "Host" .
+_:ucla_h2 <name> "XDS SIGMA7" .
+_:ucla_h1 <H_LINK> _:ucla .
+_:ucla_h2 <H_LINK> _:ucla .
+
+
+# Site: SRI
+
+_:sri <dgraph.type> "Node" .
+_:sri <type> "IMP" .
+_:sri <name> "SRI" .
+_:sri_h1 <dgraph.type> "Host" .
+_:sri_h1 <name> "PDP-10" .
+_:sri_h2 <dgraph.type> "Host" .
+_:sri_h2 <name> "XDS-940" .
+_:sri_h1 <H_LINK> _:sri .
+_:sri_h2 <H_LINK> _:sri .
+
+
+# Site: UTAH
+
+_:utah <dgraph.type> "Node" .
+_:utah <type> "IMP" .
+_:utah <name> "UTAH" .
+_:utah_h1 <dgraph.type> "Host" .
+_:utah_h1 <name> "PDP-10" .
+_:utah_h1 <H_LINK> _:utah .
+
+
+# Site: MIT
+
+_:mit <dgraph.type> "Node" .
+_:mit <type> "IMP" .
+_:mit <name> "MIT" .
+_:mit_h1 <dgraph.type> "Host" .
+_:mit_h1 <name> "PDP-10" .
+_:mit_h2 <dgraph.type> "Host" .
+_:mit_h2 <name> "PDP-10" .
+_:mit_h3 <dgraph.type> "Host" .
+_:mit_h3 <name> "GE-645" .
+_:mit_h1 <H_LINK> _:mit .
+_:mit_h2 <H_LINK> _:mit .
+_:mit_h3 <H_LINK> _:mit .
+
+
+# Site: LINCOLN
+
+_:lincoln <dgraph.type> "Node" .
+_:lincoln <type> "IMP" .
+_:lincoln <name> "LINCOLN" .
+_:lincoln_h1 <dgraph.type> "Host" .
+_:lincoln_h1 <name> "360/67" .
+_:lincoln_h2 <dgraph.type> "Host" .
+_:lincoln_h2 <name> "TX2" .
+_:lincoln_h3 <dgraph.type> "Host" .
+_:lincoln_h3 <name> "TSP" .
+_:lincoln_h1 <H_LINK> _:lincoln .
+_:lincoln_h2 <H_LINK> _:lincoln .
+_:lincoln_h3 <H_LINK> _:lincoln .
+
+
+# Site: CASE
+
+_:case <dgraph.type> "Node" .
+_:case <type> "IMP" .
+_:case <name> "CASE" .
+_:case_h1 <dgraph.type> "Host" .
+_:case_h1 <name> "PDP-10" .
+_:case_h1 <H_LINK> _:case .
+
+
+# Site: CARNEGIE
+
+_:carnegie <dgraph.type> "Node" .
+_:carnegie <type> "IMP" .
+_:carnegie <name> "CARNEGIE" .
+_:carnegie_h1 <dgraph.type> "Host" .
+_:carnegie_h1 <name> "PDP-10" .
+_:carnegie_h1 <H_LINK> _:carnegie .
+
+
+# Site: HARVARD
+
+_:harvard <dgraph.type> "Node" .
+_:harvard <type> "IMP" .
+_:harvard <name> "HARVARD" .
+_:harvard_h1 <dgraph.type> "Host" .
+_:harvard_h1 <name> "PDP-1" .
+_:harvard_h2 <dgraph.type> "Host" .
+_:harvard_h2 <name> "PDP-10" .
+_:harvard_h1 <H_LINK> _:harvard .
+_:harvard_h2 <H_LINK> _:harvard .
+
+
+# Site: BBN
+
+_:bbn <dgraph.type> "Node" .
+_:bbn <type> "IMP" .
+_:bbn <name> "BBN" .
+_:bbn_h1 <dgraph.type> "Host" .
+_:bbn_h1 <name> "DDP-516" .
+_:bbn_h2 <dgraph.type> "Host" .
+_:bbn_h2 <name> "PDP-10" .
+_:bbn_h1 <H_LINK> _:bbn .
+_:bbn_h2 <H_LINK> _:bbn .
+
+
+# Site: RAND
+
+_:rand <dgraph.type> "Node" .
+_:rand <type> "IMP" .
+_:rand <name> "RAND" .
+_:rand_h1 <dgraph.type> "Host" .
+_:rand_h1 <name> "IBM 1800" .
+_:rand_h2 <dgraph.type> "Host" .
+_:rand_h2 <name> "360/65" .
+_:rand_h1 <H_LINK> _:rand .
+_:rand_h2 <H_LINK> _:rand .
+
+
+##
+## SEGMENT 2 - Inner Path (Up from UCLA to SRI)
+
+
+# Site: UCSB
+
+_:ucsb <dgraph.type> "Node" .
+_:ucsb <type> "IMP" .
+_:ucsb <name> "UCSB" .
+_:ucsb_h1 <dgraph.type> "Host" .
+_:ucsb_h1 <name> "360/75" .
+_:ucsb_h1 <H_LINK> _:ucsb .
+
+
+##
+## SEGMENT 3 - Inner Path (Up from RAND to SRI)
+
+
+# Site: STANFORD
+
+_:stanford <dgraph.type> "Node" .
+_:stanford <type> "IMP" .
+_:stanford <name> "STANFORD" .
+_:stanford_h1 <dgraph.type> "Host" .
+_:stanford_h1 <name> "PDP-10" .
+_:stanford_h1 <H_LINK> _:stanford .
+
+
+##
+## SEGMENT 4 - Inner Path (Up from RAND to UTAH)
+
+
+# Site: SDC
+
+_:sdc <dgraph.type> "Node" .
+_:sdc <type> "IMP" .
+_:sdc <name> "SDC" .
+_:sdc_h1 <dgraph.type> "Host" .
+_:sdc_h1 <name> "DDP-516" .
+_:sdc_h2 <dgraph.type> "Host" .
+_:sdc_h2 <name> "360/67" .
+_:sdc_h1 <H_LINK> _:sdc .
+_:sdc_h2 <H_LINK> _:sdc .
+
+
+##
+## SEGMENT 5 - Inner Path (Up from BBN to MIT)
+
+
+## NETWORK (10+2+2+2+1=17)
+
+##
+## SEGMENT 1 - Outer Circuit (Clockwise from UCLA to RAND)
+_:ucla <N_LINK> _:sri .
+_:sri <N_LINK> _:utah .
+_:utah <N_LINK> _:mit .
+_:mit <N_LINK> _:lincoln .
+_:lincoln <N_LINK> _:case .
+_:case <N_LINK> _:carnegie .
+_:carnegie <N_LINK> _:harvard .
+_:harvard <N_LINK> _:bbn .
+_:bbn <N_LINK> _:rand .
+_:rand <N_LINK> _:ucla .
+##
+## SEGMENT 2 - Inner Path (Up from UCLA to SRI)
+_:ucla <N_LINK> _:ucsb .
+_:ucsb <N_LINK> _:sri .
+##
+## SEGMENT 3 - Inner Path (Up from RAND to SRI)
+_:rand <N_LINK> _:stanford .
+_:stanford <N_LINK> _:sri .
+##
+## SEGMENT 4 - Inner Path (Up from RAND to UTAH)
+_:rand <N_LINK> _:sdc .
+_:sdc <N_LINK> _:utah .
+##
+## SEGMENT 5 - Inner Path (Up from BBN to MIT)
+_:bbn <N_LINK> _:mit .

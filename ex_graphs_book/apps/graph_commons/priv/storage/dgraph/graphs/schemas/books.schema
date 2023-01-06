@@ -1,0 +1,29 @@
+date: dateTime .
+format: string @index(term) .
+isbn: string @index(exact) .
+name: string @index(term) .
+title: string @index(term) .
+url: string @index(exact) .
+
+AUTHORED_BY: [uid] .
+PUBLISHED_BY: [uid] .
+
+type Book {
+  date
+  format
+  isbn
+  title
+  url
+  AUTHORED_BY
+  PUBLISHED_BY
+}
+
+type Author {
+  name
+  url
+}
+
+type Publisher {
+  name
+  url
+}

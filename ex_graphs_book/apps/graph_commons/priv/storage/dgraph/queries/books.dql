@@ -1,0 +1,11 @@
+{
+  books(func: type(Book)) {
+    uid
+    iri
+    title
+    date
+    format
+    AUTHORED_BY { uid expand(_all_)} @facets(role)
+    PUBLISHED_BY { uid expand(_all_)}
+  }
+}
